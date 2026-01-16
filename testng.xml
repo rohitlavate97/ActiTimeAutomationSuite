@@ -1,0 +1,11 @@
+
+<suite name="Suite">
+<listeners>
+ <listener class-name="com.alchemist.generic.TestNgListeners"></listener>
+ </listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.alchemist.scripts.TestLogin"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

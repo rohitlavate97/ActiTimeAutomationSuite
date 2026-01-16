@@ -20,12 +20,12 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void setUname(WebElement uname) {
-		this.uname = uname;
+	public void setUname(String uname) {
+		loginBtn.sendKeys(uname);
 	}
 
-	public void setPassword(WebElement password) {
-		this.password = password;
+	public void setPassword(String password) {
+		loginBtn.sendKeys(password);
 	}
 	
 	public void clickLogin() {

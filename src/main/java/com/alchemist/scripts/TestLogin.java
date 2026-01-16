@@ -18,8 +18,10 @@ public class TestLogin extends BaseTest{
 		loginPage.setPassword(password);
 		loginPage.clickLogin();
 		String actualTitle = driver.getTitle();
-		if(actualTitle.contains(expectedTitle)) {
-			Assert.assertTrue(true);
-		}
+		System.out.println(actualTitle);
+		/*
+		 * if(actualTitle.contains(expectedTitle)) { Assert.assertTrue(true); }
+		 */
+		Assert.assertEquals(actualTitle, expectedTitle);
 	}
 }

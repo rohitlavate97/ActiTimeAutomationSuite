@@ -272,5 +272,26 @@ public class TestLogin extends BaseTest {
 ```
 <suite name="Suite">
     <listeners>
-        <listener class-name="com.alchemist.generic.TestNgLi
+        <listener class-name="com.alchemist.generic.TestNgListeners"/>
+    </listeners>
+    <test thread-count="5" name="Test">
+        <classes>
+            <class name="com.alchemist.scripts.TestLogin"/>
+        </classes>
+    </test>
+</suite>
 ```
+
+---
+
+# 8. Notes / Best Practices
+
+1. Use ThreadLocal<WebDriver> for true parallel execution.
+2. Store all test data in Excel and configs in config.properties.
+3. Use Log4j for logging instead of System.out.println.
+4. Screenshots are automatically taken on test failures.
+5. Use POM to keep tests maintainable and readable.
+
+---
+
+*End of Framework Documentation*

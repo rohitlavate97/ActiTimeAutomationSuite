@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-17T02:19:55 IST" name="Suite" finished-at="2026-01-17T02:20:02 IST" duration-ms="6669">
+  <suite started-at="2026-01-17T13:58:28 IST" name="Suite" finished-at="2026-01-17T13:58:41 IST" duration-ms="13642">
     <groups>
     </groups>
-    <test started-at="2026-01-17T02:19:55 IST" name="Test" finished-at="2026-01-17T02:20:02 IST" duration-ms="6669">
+    <test started-at="2026-01-17T13:58:28 IST" name="Test" finished-at="2026-01-17T13:58:41 IST" duration-ms="13642">
       <class name="com.alchemist.scripts.TestLogin">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:com.alchemist.scripts.TestLogin@765d7657]" started-at="2026-01-17T02:19:55 IST" name="openApp" finished-at="2026-01-17T02:20:00 IST" duration-ms="5067" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.alchemist.scripts.TestLogin@10683d9d]" started-at="2026-01-17T13:58:28 IST" name="openApp" finished-at="2026-01-17T13:58:39 IST" duration-ms="11693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="testLogin()[pri:0, instance:com.alchemist.scripts.TestLogin@765d7657]" started-at="2026-01-17T02:20:00 IST" name="testLogin" finished-at="2026-01-17T02:20:02 IST" duration-ms="1462" status="PASS">
+        <test-method signature="testLogin()[pri:0, instance:com.alchemist.scripts.TestLogin@10683d9d]" started-at="2026-01-17T13:58:39 IST" name="testLogin" finished-at="2026-01-17T13:58:41 IST" duration-ms="1742" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.alchemist.scripts.TestLogin@765d7657]" started-at="2026-01-17T02:20:02 IST" name="closeApplication" finished-at="2026-01-17T02:20:02 IST" duration-ms="99" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.alchemist.scripts.TestLogin@10683d9d]" started-at="2026-01-17T13:58:41 IST" name="closeApplication" finished-at="2026-01-17T13:58:41 IST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->

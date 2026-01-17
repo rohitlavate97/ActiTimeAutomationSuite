@@ -13,13 +13,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-public class BaseTest implements IAutoConstant{
+public class BaseTest implements IAutoConstant {
 	public static WebDriver driver;
 	static {
 		System.setProperty(CHROME_KEY, CHROME_VALUE);
 		System.setProperty(GECKO_KEY, GECKO_VALUE);
 	}
-	
+
 	@BeforeMethod
 	public void openApp() {
 		driver = new ChromeDriver();
@@ -29,18 +29,24 @@ public class BaseTest implements IAutoConstant{
 		int timeOutPeriod = Integer.parseInt(implicitTimeOut);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeOutPeriod));
 	}
-	
-	@AfterMethod
+
+	@AfterMethod(alwaysRun = true)
 	public void closeApplication() {
-		driver.close();
+		try {
+			if (driver != null) {
+				driver.quit();
+			}
+		} catch (Exception e) {
+			// Ignore cleanup exceptions
+		}
 	}
-	
+
 	public void takeScreenshot(String testname) {
 		Date date = new Date();
 		String currentDate = date.toString().replaceAll(":", "_");
-		TakesScreenshot ts = (TakesScreenshot)driver;
+		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File dest = new File(".\\screenshots\\"+currentDate+"\\"+testname+"_screenshot.png");
+		File dest = new File(".\\screenshots\\" + currentDate + "\\" + testname + "_screenshot.png");
 		try {
 			FileUtils.copyFile(src, dest);
 		} catch (IOException e) {

@@ -1,0 +1,6 @@
+com\alchemist\scripts\TestLogin.class
+com\alchemist\generic\TestNgListeners.class
+com\alchemist\generic\IAutoConstant.class
+com\alchemist\generic\BaseTest.class
+com\alchemist\generic\Lib.class
+com\alchemist\pompages\LoginPage.class
